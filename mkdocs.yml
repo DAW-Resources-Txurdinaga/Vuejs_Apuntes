@@ -1,0 +1,104 @@
+site_name: CIFP Txurdinaga LHII - DWC - Vue.js 3 
+strict: true
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.escapeall:
+      hardbreak: true
+      nbsp: true
+
+
+# Estructura de navegación
+nav:
+  - Inicio: index.md
+  - '1. Conceptos Básicos':
+    - '1.1 Introducción a Vue': 'conceptos-basicos/introduccion.md'
+    - '1.2 Tu primera aplicación': 'conceptos-basicos/primer-ejemplo.md'
+  - '2. Fundamentos':
+    - '2.1 Interpolación y Directivas': 'fundamentos/interpolacion.md'
+    - '2.2 V-bind y V-model': 'fundamentos/vbind-vmodel.md'
+    - '2.3 V-if y V-for': 'fundamentos/condicionales-bucles.md'
+    - '2.4 Propiedades Computadas': 'fundamentos/propiedades-computadas.md'
+    - '2.5 Manejo de Eventos': 'fundamentos/eventos.md'
+    - '2.6 Ciclo de Vida de la Instancia': 'fundamentos/ciclo-vida.md'
+    - '2.7 Ejercicio Práctico': 'fundamentos/ejercicio-practico.md'
+    - '2.8 Hoja de Referencia Rápida': 'fundamentos/cheat-sheet.md'
+  - '3. Componentes':
+    - '3.1 Creación y Uso': 'componentes/creacion.md'
+    - '3.2 Comunicación entre componentes': 'componentes/comunicacion.md'
+  - '4. Peticiones HTTP':
+    - '4.1 Introducción': 'http/introduccion.md'
+    - '4.2 Uso de la API Fetch': 'http/fetch.md'
+    - '4.3 Uso de Axios': 'http/axios.md'
+    - '4.4 Uso de Alova': 'http/alova.md'
+    - '4.5 Ejercicios Prácticos': 'http/ejercicios.md'
+  - '5. Enrutamiento con Vue Router':
+    - '5.1 Introducción': 'routing/introduccion.md'
+    - '5.2 Rutas Básicas': 'routing/rutas-basicas.md'
+    - '5.3 Navegación Avanzada': 'routing/navegacion-avanzada.md'
+    - '5.4 Ejercicio Práctico': 'routing/ejercicio-practico.md'
+  - '6. Gestión de Estado con Pinia':
+    - '6.1 Introducción a Pinia': 'pinia/introduccion.md'
+    - '6.2 Stores en Pinia': 'pinia/stores.md'
+    - '6.3 Conceptos Avanzados': 'pinia/avanzado.md'
+  - '7. Proyecto Práctico':
+    - '7.1 Estructura del proyecto': 'proyecto/estructura.md'
+    - '7.2 Ejercicios guiados': 'proyecto/ejercicios.md'
+
+# Configuración del tema
+theme:
+  name: material
+  language: es
+  custom_dir: overrides
+  logo: assets/images/logo.png
+  
+  # Características
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - navigation.top
+    - header.autohide
+    - search.highlight
+    - search.suggest
+    - content.code.annotate
+    - content.tabs.linked
+  
+  # Navegación
+  navigation:
+    collapse: true
+    sticky: true
+    
+  # Paleta de colores
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a tema oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a tema claro
+
+# Configuración de búsqueda
+plugins:
+  - search:
+      separator: '[\s\-:]+'
+      lang: 'es'
+
+# Configuración de la página
+use_directory_urls: true
+
+# CSS personalizado
+extra_css:
+  - https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap
+  - custom3.css
+
+# Footer personalizado
+extra:
+  copyright: "&copy; 2025 Jose Insausti - CIFP Txurdinaga LHII"
