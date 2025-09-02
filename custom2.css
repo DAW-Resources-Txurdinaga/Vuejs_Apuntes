@@ -1,0 +1,11 @@
+/* Personaliza bloques de código bash */
+.md-typeset pre code.language-bash {
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo negro translúcido */
+  color: #00ffcc;                      /* Texto en un verde brillante */
+  border: 1px solid #00cc99;           /* Borde con un verde suave */
+  border-radius: 6px;                  /* Bordes redondeados */
+  padding: 12px;                       /* Espaciado interno */
+  font-family: 'Fira Code', monospace; /* Fuente monoespaciada estilizada */
+  font-size: 0.95rem;                  /* Tamaño de fuente ajustado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
